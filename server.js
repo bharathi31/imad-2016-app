@@ -26,8 +26,7 @@ var articles ={
                 <p>Second file success</p>`
     },
     
-    articleThree: 
-    {
+    articleThree:{
         title: 'Article Three',
         heading: 'Article THREE',
         date: '11/10/2016',
