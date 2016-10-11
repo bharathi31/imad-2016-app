@@ -5,36 +5,37 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
-    title: 'Article One',
-    heading: 'Article ONE',
-    date: '11/10/2016',
-    content: `
-            <p>This is my first try in article simple file. Pleae check.</p>
-            <p>Happy to learn from imad</p>
-            <p>Hope i learn all these</p>`
-};
-
-var articleTwo ={
+var articles ={
+    articleOne :{
+        title: 'Article One',
+        heading: 'Article ONE',
+        date: '11/10/2016',
+        content: `
+                <p>This is my first try in article simple file. Pleae check.</p>
+                <p>Happy to learn from imad</p>
+                <p>Hope i learn all these</p>`
+    },
     
-    title: 'Article Two',
-    heading: 'Article TWO',
-    date: '11/10/2016',
-    content: `
-            <p>This is my first try in article simple second file. Pleae check.</p>
-            <p>Happy to learn from imad</p>
-            <p>Second file success</p>`
+    articleTwo :{
+        title: 'Article Two',
+        heading: 'Article TWO',
+        date: '11/10/2016',
+        content: `
+                <p>This is my first try in article simple second file. Pleae check.</p>
+                <p>Happy to learn from imad</p>
+                <p>Second file success</p>`
+    },
     
-};
-
-var articleThree={
-    title: 'Article Three',
-    heading: 'Article THREE',
-    date: '11/10/2016',
-    content: `
-            <p>This is my first try in article simple Third file. Pleae check.</p>
-            <p>Happy to learn from imad</p>
-            <p>Third file success</p>`
+    articleThree: 
+    {
+        title: 'Article Three',
+        heading: 'Article THREE',
+        date: '11/10/2016',
+        content: `
+                <p>This is my first try in article simple Third file. Pleae check.</p>
+                <p>Happy to learn from imad</p>
+                <p>Third file success</p>`
+    }
 };
 
 function createtemplate(data){
